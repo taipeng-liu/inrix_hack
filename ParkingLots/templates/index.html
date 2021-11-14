@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        .required:after {
+          content:" *";
+          color: red;
+        }
+        #center {
+                width: 612px;
+                height: 612px;
+                background-color: lightgreen;
+                object-fit: none;
+                object-position: center top;
+            }
+
+            #left {
+                width: 612px;
+                height: 612px;
+                background-color: lightgreen;
+                object-fit: none;
+                object-position: left top;
+            }
+
+            #right {
+                width: 1400px;
+                height: 612px;
+                object-fit: none;
+                object-position: right top;
+            }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Parking Lots!</title>
+</head>
+
+<body>
+    <div class="container">
+        
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a href="/ParkingLots/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <span class="navbar-text">
+                <h1>Parking Lots</h1>
+            </span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <br />
+    <div class="container">
+        <form method="post" enctype="multipart/form-data" action="/ParkingLots/findPrkg/">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="departAddr" class="form-label">Departure</label>
+                <input type="text" class="form-control" id="departAddr" name="departAddr" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="destAddr" class="form-label required">Destination</label>
+                <input type="text" class="form-control" id="destAddr" name="destAddr" required>
+            </div>
+            <div class="mb-3">
+                <label for="radius" class="form-label required">Radius</label>
+                <input type="number" class="form-control" id="radius" name="radius" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <img id="right"
+            src="https://media.istockphoto.com/vectors/car-parking-icon-vector-id1083622428?k=20&m=1083622428&s=612x612&w=0&h=pgKz3ptT-VgQiXZ7cVolMLeXKy9Ma5YKrfeE7SmDLQ8=" />
+
+
+        {{ name }}
+    </div>
+</body>
+
+</html>
