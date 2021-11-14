@@ -1,0 +1,90 @@
+{
+    "result": [
+      {
+        "name": "string",
+        "probability": "number",
+        "reservations": [],
+        "segments": [
+          {
+            "end": "number",
+            "side": "string",
+            "start": "number",
+            "amenities": [
+              {
+                "id": "number",
+                "name": "string"
+              },
+              {
+                "id": "number",
+                "name": "string"
+              },
+              {
+                "id": "number",
+                "name": "string"
+              }
+            ],
+            "paymentID": [],
+            "polyline6": "string",
+            "rateCards": [
+              "string",
+              "string",
+              "string",
+              "string",
+              "string",
+              "string"
+            ],
+            "segmentID": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            "paymentIDs": [],
+            "spacesTotal": "number",
+            "isOpen": "boolean",
+            "calculatedRates": [
+              {
+                "rate_cost": "number",
+                "quoted_duration": "hh:mm:ss",
+                "rate_type": "string"
+              }
+            ]
+          },
+          {
+            "end": "number",
+            "side": "string",
+            "start": "number",
+            "amenities": [
+              {
+                "id": "number",
+                "name": "string"
+              },
+              {
+                "id": "number",
+                "name": "string"
+              },
+              {
+                "id": "number",
+                "name": "string"
+              }
+            ],
+            "paymentID": [],
+            "polyline6": "string",
+            "rateCards": [
+              "string",
+              "string",
+              "string",
+              "string",
+              "string"
+            ],
+            "segmentID": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            "paymentIDs": [],
+            "spacesTotal": "number",
+            "isOpen": "boolean",
+            "calculatedRates": [
+              {
+                "rate_cost": "number",
+                "quoted_duration": "hh:mm:ss",
+                "rate_type": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
