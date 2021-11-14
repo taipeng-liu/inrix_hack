@@ -1,0 +1,32 @@
+{"copyright":"Copyright INRIX Inc.",
+ "versionNumber":"5.2",
+ "createdDate":"2021-11-14T06:45:21Z",
+ "responseId":"6e067399-999c-4e43-8d2b-1b592254db4f",
+ "count":1,
+ "result":[
+    { "id":84169,
+      "type":"Non-restricted",
+      "costIndex":4,
+      "hrs":["Mon-Sun: 24 Hours","No Overnight Parking"],
+      "rateCard":["1 Hour: $5","Each Add'l 30 Min: $2","6.5 Hours: $27","24 Hours: $30","Max (With Validation): $12","Monthly: $160"],
+      "peps":[
+          {"pepPt":[-122.42153552377304,37.74664459627663],
+           "pepAz":72,"pepPrimary":true,"pepType":"IN\/OUT"}
+      ],
+      "pmtTypes":["Amex","Bills","Debit card","MC\/Visa"],
+      "name":"Mission Bernal Campus Parking Garage",
+      "note":"Validation For Patient - Daily Max: $12\nEmployee (With CPMC ID): $20\nNo Overnight Parking Without Written Authorization\nLost Ticket Pays Max",
+      "navigationAddress":{
+          "street":"573 San Jose Ave",
+          "city":"San Francisco",
+          "state":"CA",
+          "postal":"94110",
+          "country":"US",
+          "type":"NAVIGATION"
+      },
+      "distance":81,
+      "buildingAddress":{"street":"3555 Cesar Chavez","city":"San Francisco","state":"CA","postal":"94110","country":"US","type":"LEGAL"},
+      "point":{"type":"Point","coordinates":[-122.421191821397,37.7467572266431]}
+    }
+    ]
+}
