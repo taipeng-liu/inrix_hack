@@ -1,0 +1,4 @@
+{
+ "message":"User is not authorized to access this resource",
+ "errors":[{"statusId":614,"systemMessage":"Request was for unauthorized location."}]
+}
